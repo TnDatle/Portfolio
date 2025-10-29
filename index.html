@@ -3,207 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lê Tấn Đạt - Portfolio</title>
+  <title>Lê Tấn Đạt — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">LÊ TẤN ĐẠT PORTFOLIO</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- ===== HEADER ===== -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">LÊ TẤN <span>ĐẠT</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-content">
-      <h2>👋 Hi, I’m <span>Le Tan Dat</span></h2>
-      <a href="#projects" class="btn">Explore Projects</a>
-    </div>
-    <div class="tech-glow"></div>
-  </section>
-
-  <section id="about" class="fade-in">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="img.jpg" alt="Le Tan Dat Profile Photo" class="profile-img">
-
-    <div class="about-text">
-      <p>
-        I'm a recent IT graduate passionate about <strong>JavaScript, React, Node.js, .NET and Firebase</strong>.
-        Currently seeking a <strong>Software Engineer / Development Intern</strong> and <strong>Back-End developer Intern</strong> position to apply my skills, gain hands-on experience,
-        contribute to innovative tech projects and then become a professional Software Engineer.
-      </p>
-
-      <ul class="personal-info">
-        <li><strong>🎓 Education:</strong> Bachelor of Information Technology, Vietnam Aviation Academy</li>
-        <li><strong>📍 Address:</strong> District 10, Ho Chi Minh City, Vietnam</li>
-        <li><strong>📧 Email:</strong> <a href="mailto:datletan.work@gmail.com">datletan.work@gmail.com</a></li>
-        <li><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/tan-dat-le-343465369/" target="_blank">linkedin.com/in/tan-dat-le-343465369</a></li>
-        <li><strong>💻 GitHub:</strong> <a href="https://github.com/TnDatle" target="_blank">github.com/TnDatle</a></li>
-        <li><strong>🗣 TOEIC:</strong> 710/990 (Listening & Reading)</li>
-      </ul>
-
-      <a href="https://drive.google.com/file/d/1hX4Dqc-LJLUlLGmpxnZA7WRhUsaE-mzD/view?usp=sharing" class="btn" target="_blank">View My CV</a>
-      <a href="https://drive.google.com/file/d/1ILIBNYQnFdA8zsk_ZvdwmXpHKhTMnHdN/view?usp=sharing" class="btn" target="_blank">View My Academy Transcript</a>
-    </div>
-  </div>
-</section>
-
-
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <div class="skill-list">
-   <div class="skill-list">
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-    <p>HTML5</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-    <p>CSS3</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-    <p>JavaScript</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-    <p>React.js</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.simpleicons.org/node.js/339933" alt="Node.js" />
-    <p>Node.js</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" alt=".NET" />
-    <p>.NET (WinForms)</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
-    <p>Firebase</p>
-  </div>
-    <div class="skill-card">
-    <img src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png" alt="SQLite" width="48" height="48" />
-    <p>SQLite</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />
-    <p>Postman</p>
-  </div>
-  <div class="skill-card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-    <p>Git / GitHub</p>
-  </div>
-</div>
+      <h2 class="fade-up">👋 Hi, I’m <span>Le Tan Dat</span></h2>
+      <a href="#projects" class="btn fade-up-delay">View My Projects</a>
     </div>
   </section>
 
-<section id="experience" class="fade-in">
-  <h2>Work Experience</h2>
-  <div class="experience-timeline">
-    
-    <div class="exp-card">
-      <div class="exp-dot"></div>
-      <div class="exp-content">
-        <h3>Information Technology Intern</h3>
-        <h4>SPN INVEST | Ho Chi Minh City</h4>
-        <span class="exp-date">May 2025 – August 2025</span>
-        <p>
-          • Customized WordPress POS website, improving UX & enabling product sync<br>
-          • Tested POS system, documented bugs and suggested fixes for senior developers<br>
-          • Maintained customer info system & prepared weekly reports<br>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <img src="img.jpg" alt="Le Tan Dat" class="profile-img">
+        <div class="about-text">
+          <p>
+            I’m an IT graduate specializing in <strong>React, Node.js, .NET, and Firebase</strong>.  
+            Currently seeking a <strong>Software Engineer Intern</strong> opportunity to apply my skills, grow professionally, 
+            and contribute to impactful web applications.
+          </p>
 
+          <ul class="info-list">
+            <li><strong>🎓 Education:</strong> Vietnam Aviation Academy — <em>Bachelor of Information Technology</em></li>
+            <li><strong>📍 Location:</strong> Ho Chi Minh City, Vietnam</li>
+            <li><strong>📧 Email:</strong> <a href="mailto:datletan.work@gmail.com">datletan.work@gmail.com</a></li>
+            <li><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/tan-dat-le-343465369/" target="_blank">linkedin.com/in/tan-dat-le</a></li>
+            <li><strong>💻 GitHub:</strong> <a href="https://github.com/TnDatle" target="_blank">github.com/TnDatle</a></li>
+          </ul>
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3>WeHome</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>React + Bootstrap + Node.js (Express.js) </strong>e-commerce platform for household applications products.</p>
-            <a href="https://github.com/TnDatle/WeHome" target="_blank">View ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3>TWGameStore</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>React + Node.js </strong>e-commerce platform for gaming products.</p>
-            <a href="https://github.com/TnDatle/Twgamestore" target="_blank">View ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3>DHH Laptop Store</h3>
-          </div>
-          <div class="card-back">
-            <p><strong>HTML5/CSS3/Js + Node.js </strong> e-commerce platform for technology products.</p>
-            <a href="https://github.com/TnDatle/TTTN">View ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3>AI Hand Gesture Recognition</h3>
-          </div>
-          <div class="card-back">
-            <p>Deep learning model with <strong>CNN - VGG16</strong> detecting gestures in real-time.</p>
-            <a href="#">View ↗</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h3>Student Management System</h3>
-          </div>
-          <div class="card-back">
-        <p>Desktop application built with <strong>.NET WinForms</strong> and <strong>SQLite</strong> for managing students, grades, and user roles.</p>
-            <a href="https://github.com/TnDatle/QLHS">View ↗</a>
+          <div class="btn-group">
+            <a href="https://drive.google.com/file/d/1hX4Dqc-LJLUlLGmpxnZA7WRhUsaE-mzD/view?usp=sharing" class="btn-outline" target="_blank">CV</a>
+            <a href="https://drive.google.com/file/d/1ILIBNYQnFdA8zsk_ZvdwmXpHKhTMnHdN/view?usp=sharing" class="btn-outline" target="_blank">Transcript</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <form id="contactForm" action="https://formspree.io/f/mdkwyglj" method="POST">
-  <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" placeholder="example@email.com" required />
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><p>HTML5</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><p>CSS3</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><p>JavaScript</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/><p>React</p></div>
+        <div class="skill-card"><img src="https://cdn.simpleicons.org/node.js/3C873A"/><p>Node.js</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" /><p>Express.js</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/><p>Firebase</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/><p>Git</p></div>
+        <div class="skill-card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png" width="48"/><p>SQLite</p></div>
+      </div>
+    </div>
+  </section>
 
-  <label for="message">Your Message</label>
-  <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Information Technology Intern</h3>
+            <h4>SPN INVEST | Ho Chi Minh City</h4>
+            <span class="exp-date">May 2025 – Aug 2025</span>
+            <p>
+              • Customized WordPress POS website, improving UX & enabling product sync.<br>
+              • Tested POS system, documented bugs, and proposed fixes.<br>
+              • Managed customer info & generated weekly reports for management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <button type="submit" class="btn">Send Message</button>
-  <p id="status"></p>
-</form>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        
+        <div class="project-card">
+          <h3>WeHome (Freelance – Team Project)</h3>
+          <span class="project-date">Oct 2025 – Present</span>
+          <p>
+            Developed a <strong>React + Bootstrap + Node.js (Express.js) and Firebase</strong> e-commerce platform 
+            for household products. Collaborated in a team of 2 to build product listing, shopping cart, 
+            and order management modules.
+          </p>
+          <a href="https://github.com/TnDatle/WeHome" target="_blank">View ↗</a>
+        </div>
 
+        <div class="project-card">
+          <h3>TWGameStore (Personal Project)</h3>
+          <span class="project-date">Aug 2025 – Present</span>
+          <p>
+            Built a full-stack web application using <strong>React, Node.js (Express.js) and Firebase</strong> 
+            to manage digital game sales, authentication, and shopping cart features with responsive UI.
+          </p>
+          <a href="https://github.com/TnDatle/Twgamestore" target="_blank">View ↗</a>
+        </div>
+
+        <div class="project-card">
+          <h3>DHH Laptop Store (Academic Project)</h3>
+          <span class="project-date">Dec 2024 – Apr 2025</span>
+          <p>
+            Created an <strong>HTML/CSS/JavaScript + Node.js and Firebase</strong> e-commerce website 
+            for selling laptops and technology products as part of a university coursework project.
+          </p>
+          <a href="https://github.com/TnDatle/TTTN" target="_blank">View ↗</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AI Hand Gesture Recognition (Academic Project)</h3>
+          <span class="project-date">Sep 2024 – Nov 2024</span>
+          <p>
+            Designed a deep learning system using <strong>Python, TensorFlow, and Mediapipe</strong> 
+            to recognize hand gestures in real-time with a <strong>CNN (VGG16)</strong> architecture.
+          </p>
+          <a href="#" target="_blank">View ↗</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Student Management System (Academic Project)</h3>
+          <span class="project-date">Apr 2024 – Jun 2024</span>
+          <p>
+            Developed a desktop application using <strong>.NET WinForms</strong> and <strong>SQLite</strong> 
+            to manage student data, courses, and grade reports with CRUD functionality.
+          </p>
+          <a href="https://github.com/TnDatle/QLHS" target="_blank">View ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <form action="https://formspree.io/f/mdkwyglj" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Lê Tấn Đạt — Built with 💙 HTML, CSS & JS</p>
+    <p>© 2025 Lê Tấn Đạt — Built with HTML, CSS , JavaScript & Passion</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
