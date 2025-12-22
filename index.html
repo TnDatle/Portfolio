@@ -4,15 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lê Tấn Đạt — Portfolio</title>
+
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="main.js"></script>
+
 </head>
+
 <body>
-  <!-- ===== HEADER ===== -->
+
+  <!-- ===== HEADER / NAVBAR ===== -->
   <header class="navbar">
-    <div class="container">
+    <div class="container navbar-inner">
       <h1 class="logo">LÊ TẤN <span>ĐẠT</span></h1>
-      <nav>
+
+      <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -25,166 +37,309 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2 class="fade-up">👋 Hi, I’m <span>Le Tan Dat</span></h2>
-      <a href="#projects" class="btn fade-up-delay">View My Projects</a>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <img src="img.jpg" alt="Le Tan Dat" class="profile-img">
-        <div class="about-text">
-          <p>
-           I’m an IT graduate specializing in <strong>React, Node.js, Express.js and Firebase</strong>.
-            Currently seeking a <strong>Full-Stack Developer Intern</strong> or <strong>Software Engineer Intern</strong> role to apply my skills,
-            gain hands-on experience, and grow into a Software Engineer by contributing to real-world web applications.
-          </p>
-
-          <ul class="info-list">
-            <li><strong>🎓 Education:</strong> Vietnam Aviation Academy — <em>Bachelor of Information Technology</em></li>
-            <li><strong>📍 Location:</strong> Ho Chi Minh City, Vietnam</li>
-            <li><strong>📧 Email:</strong> <a href="mailto:datletan.work@gmail.com">datletan.work@gmail.com</a></li>
-            <li><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/tan-dat-le-343465369/" target="_blank">linkedin.com/in/tan-dat-le</a></li>
-            <li><strong>💻 GitHub:</strong> <a href="https://github.com/TnDatle" target="_blank">github.com/TnDatle</a></li>
-          </ul>
-
-          <div class="btn-group">
-            <a href="https://drive.google.com/file/d/1E_HIDb_En6lJMd-410gsC6SdXkPeW_hK/view?usp=sharing" class="btn-outline" target="_blank">CV</a>
-            <a href="https://drive.google.com/file/d/1ILIBNYQnFdA8zsk_ZvdwmXpHKhTMnHdN/view?usp=sharing" class="btn-outline" target="_blank">Transcript</a>
-            <a href="https://drive.google.com/file/d/1yrAb5LEYFZaPlkch7T7FbgQnZ5LXpDqS/view?usp=sharing" class="btn-outline" target="_blank">TOEIC Certification</a>
-
-          </div>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="fade-up">
+          👋 Hi, I’m <span>Le Tan Dat</span>
+        </h2>
+        <a href="#projects" class="btn fade-up-delay">
+          View My Projects
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><p>HTML5</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><p>CSS3</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><p>JavaScript</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/><p>React</p></div>
-        <div class="skill-card"><img src="https://cdn.simpleicons.org/node.js/3C873A"/><p>Node.js</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" /><p>Express.js</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/><p>Firebase</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/><p>Git</p></div>
-        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /><p>GitHub</p></div>
-        <div class="skill-card"><img src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png" width="48"/><p>SQLite</p></div>
-        <div class="skill-card"><img src="https://cdn.simpleicons.org/render/46E3B7" /><p>Render</p></div>
-        <div class="skill-card"><img src="https://cdn.simpleicons.org/vercel/000000" /><p>Vercel</p></div>
-      </div>
-    </div>
-  </section>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
 
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Information Technology Intern</h3>
-            <h4>SPN INVEST | Ho Chi Minh City</h4>
-            <span class="exp-date">May 2025 – Aug 2025</span>
+        <div class="about-grid">
+          <img
+            src="img.jpg"
+            alt="Portrait of Le Tan Dat"
+            class="profile-img"
+          >
+
+          <div class="about-text">
             <p>
-              • Customized WordPress POS website, improving UX & enabling product sync.<br>
-              • Tested POS system, documented bugs, and proposed fixes.<br>
-              • Managed customer info & generated weekly reports for management.
+              I’m an IT graduate specializing in
+              <strong>React, Node.js, Express.js and Firebase</strong>.
+              Currently seeking a
+              <strong>Full-Stack Developer Intern</strong> or
+              <strong>Software Engineer Intern</strong> or <strong>Web Developer Intern</strong> position to apply my skills,
+              gain hands-on experience, and grow into a Software Engineer by
+              contributing to real-world web applications.
             </p>
+
+            <ul class="info-list">
+              <li>
+                <strong>🎓 Education:</strong>
+                Vietnam Aviation Academy —
+                <em>Bachelor of Information Technology</em>
+              </li>
+              <li>
+                <strong>📍 Location:</strong>
+                District 10, Ho Chi Minh City
+              </li>
+              <li>
+                <strong>📧 Email:</strong>
+                <a href="mailto:datletan.work@gmail.com">
+                  datletan.work@gmail.com
+                </a>
+              </li>
+              <li>
+                <strong>💼 LinkedIn:</strong>
+                <a
+                  href="https://www.linkedin.com/in/tan-dat-le-343465369/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  linkedin.com/in/tan-dat-le
+                </a>
+              </li>
+              <li>
+                <strong>💻 GitHub:</strong>
+                <a
+                  href="https://github.com/TnDatle"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  github.com/TnDatle
+                </a>
+              </li>
+            </ul>
+
+            <div class="btn-group">
+              <a
+                href="https://drive.google.com/file/d/1E_HIDb_En6lJMd-410gsC6SdXkPeW_hK/view"
+                target="_blank"
+                class="btn-outline"
+              >
+                CV
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1ILIBNYQnFdA8zsk_ZvdwmXpHKhTMnHdN/view"
+                target="_blank"
+                class="btn-outline"
+              >
+                Transcript
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1yrAb5LEYFZaPlkch7T7FbgQnZ5LXpDqS/view"
+                target="_blank"
+                class="btn-outline"
+              >
+                TOEIC Certification
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-grid">
-        
-        <div class="project-card">
-          <h3>WeHome (Freelance – Team Project)</h3>
-          <span class="project-date">Oct 2025 – Dec 2025</span>
-          <p>
-            Developed a <strong>React + Bootstrap + Node.js (Express.js) and Firebase</strong> e-commerce platform 
-            for household products. Collaborated in a team of 2 to build product listing, shopping cart, 
-            and order management modules.
-          </p>
-          <a href="https://github.com/TnDatle/WeHome" target="_blank">View ↗</a>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <!-- ===== FRONTEND ===== -->
+        <h3 class="skill-group-title">Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <p>HTML5</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <p>CSS3</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <p>React</p>
+          </div>
         </div>
 
-        <div class="project-card">
-        <h3>Helios Hospital Booking System (Personal Project)-(Ongoing)</h3>
-        <span class="project-date">Nov 2025 – Present</span>
-        <p>
-          Developing a hospital appointment booking web application using 
-          <strong>React + Node.js (Express.js) and Firebase</strong>, focusing on a step-by-step booking flow, 
-          doctor scheduling, and user authentication with a clean, responsive UI.
-        </p>
-        <a href="https://github.com/TnDatle/Helios-Hospital" target="_blank">View ↗</a>
+        <!-- ===== BACKEND ===== -->
+        <h3 class="skill-group-title">Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.simpleicons.org/node.js/3C873A" alt="Node.js">
+            <p>Node.js</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js">
+            <p>Express.js</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/8099/8099229.png" alt="RESTful API">
+            <p>RESTful API</p>
+          </div>
+
+        </div>
+
+        <!-- ===== DATABASE ===== -->
+        <h3 class="skill-group-title">Database</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png" alt="SQLite">
+            <p>SQLite</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+            <p>Firebase</p>
+          </div>
+
+        </div>
+
+        <!-- ===== OTHER TOOLS ===== -->
+        <h3 class="skill-group-title">Other Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <p>Git</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            <p>GitHub</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.simpleicons.org/render/46E3B7" alt="Render">
+            <p>Render</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel">
+            <p>Vercel</p>
+          </div>
+
+           <div class="skill-card">
+            <img src="https://cdn.simpleicons.org/postman/FF6C37" alt="RESTful API">
+            <p>Postman</p>
+          </div>
+        </div>
+
       </div>
+    </section>
 
 
-        <div class="project-card">
-          <h3>DHH Laptop Store (Academic Project)</h3>
-          <span class="project-date">Dec 2024 – Apr 2025</span>
-          <p>
-            Created an <strong>HTML/CSS/JavaScript + Node.js and Firebase</strong> e-commerce website 
-            for selling laptops and technology products as part of a university coursework project.
-          </p>
-          <a href="https://github.com/TnDatle/TTTN" target="_blank">View ↗</a>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-content">
+              <h3>Information Technology Intern</h3>
+              <h4>SPN INVEST | Ho Chi Minh City</h4>
+              <span class="exp-date">May 2025 – Aug 2025</span>
+
+              <p>
+                • Customized WordPress POS website, improving UX & enabling product sync.<br>
+                • Tested POS system, documented bugs, and proposed fixes.<br>
+                • Managed customer info & generated weekly reports for management.
+              </p>
+            </div>
+          </article>
         </div>
-
-        <div class="project-card">
-          <h3>AI Hand Gesture Recognition (Academic Project)</h3>
-          <span class="project-date">Sep 2024 – Nov 2024</span>
-          <p>
-            Designed a deep learning system using <strong>Python, TensorFlow, and Mediapipe</strong> 
-            to recognize hand gestures in real-time with a <strong>CNN (VGG16)</strong> architecture.
-          </p>
-          <a href="#" target="_blank">View ↗</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Student Management System (Academic Project)</h3>
-          <span class="project-date">Apr 2024 – Jun 2024</span>
-          <p>
-            Developed a desktop application using <strong>.NET WinForms</strong> and <strong>SQLite</strong> 
-            to manage student data, courses, and grade reports with CRUD functionality.
-          </p>
-          <a href="https://github.com/TnDatle/QLHS" target="_blank">View ↗</a>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <form action="https://formspree.io/f/mdkwyglj" method="POST">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message..." required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+        <div class="project-grid">
 
+          <article class="project-card">
+            <h3>WeHome (Freelance – Team Project)</h3>
+            <span class="project-date">Oct 2025 – Dec 2025</span>
+            <p>
+              Developed a <strong>React + Bootstrap + Node.js (Express.js) and Firebase</strong>
+              e-commerce platform for household products.
+            </p>
+            <a href="https://github.com/TnDatle/WeHome" target="_blank">View ↗</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Helios Hospital Booking System (Personal Project)</h3>
+            <span class="project-date">Nov 2025 – Present</span>
+            <p>
+             Developed a <strong>React + Node.js (Express.js) and Firebase</strong> for Hospital appointment booking web application with authentication
+              and doctor scheduling.
+            </p>
+            <a href="https://github.com/TnDatle/Helios-Hospital" target="_blank">View ↗</a>
+          </article>
+
+          <article class="project-card">
+            <h3>DHH Laptop Store (Academic Project)</h3>
+            <span class="project-date">Dec 2024 – Apr 2025</span>
+            <p>
+              E-commerce website using<strong> HTML, CSS, JavaScript, Node.js and Firebase.</strong>
+            </p>
+            <a href="https://github.com/TnDatle/TTTN" target="_blank">View ↗</a>
+          </article>
+
+          <article class="project-card">
+            <h3>AI Hand Gesture Recognition</h3>
+            <span class="project-date">Sep 2024 – Nov 2024</span>
+           <p>
+              Real-time hand gesture recognition using <strong>Python, Keras, TensorFlow</strong> 
+              with a <strong>VGG16-based CNN</strong>.
+            </p>
+            <a href="#">View ↗</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Student Management System</h3>
+            <span class="project-date">Apr 2024 – Jun 2024</span>
+            <p>
+              Desktop application using <strong>.NET WinForms and SQLite.</strong>
+            </p>
+            <a href="https://github.com/TnDatle/QLHS" target="_blank">View ↗</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <form
+          action="https://formspree.io/f/mdkwyglj"
+          method="POST"
+        >
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Lê Tấn Đạt — Built with HTML, CSS , JavaScript & Passion</p>
+    <p>© 2025 Lê Tấn Đạt — Built with HTML, CSS, JavaScript & Passion</p>
   </footer>
+
 </body>
 </html>
